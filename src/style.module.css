@@ -1,0 +1,31 @@
+.header {
+    background-color: royalblue;
+    min-width: 101.5%;
+    text-align: center;
+    color: white;
+    margin-top: -8px;
+    margin-left: -8px;
+
+    
+}
+.main{
+    text-align: center;
+    border-width: 100px;
+    border-color: black;
+}
+
+
+@keyframes logo-spin {
+    from {
+      transform: rotate(0deg);
+    }
+    to {
+      transform: rotate(360deg);
+    }
+  }
+  
+  @media (prefers-reduced-motion: no-preference) {
+    a:nth-of-type(2) .logo {
+      animation: logo-spin infinite 20s linear;
+    }
+  }
