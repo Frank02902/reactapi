@@ -8,21 +8,15 @@ import style from './style.module.css'
 import Items from './Items'
 import Post_data from './learning_api/Post_data'
 import Get_data from './learning_api/get_data'
+import { Route, Routes } from 'react-router-dom'
 
 function App() {
-  const [count, setCount] = useState(0)
+
 
   return (
-    <div className= {style.main}> 
-     <Header />
-     {/* <Get_data /> */}
-     {/* <Items /> */}
-     {/* <Content /> */}
-      <Post_data />
-      {/* <Api /> */}
-    
-      
-    </div>
+   <Routes>
+    <Route exact path="/" element = {<Header />} />
+   </Routes>
   )
 }
 
